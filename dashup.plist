@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC -//Apple Computer//DTD PLIST 1.0//EN http://www.apple.com/DTDs/PropertyList-1.0.dtd >
+<plist version="1.0">
+<dict>
+    <key>Label</key>
+    <string>com.example.program</string>
+    <key>LaunchEvents</key>
+    <dict>
+            <key>com.apple.iokit.matching</key>
+            <dict>
+                    <key>com.apple.device-attach</key>
+                    <dict>
+                            <key>idProduct</key>
+                            <integer>25393</integer>
+                            <key>idVendor</key>
+                            <integer>1276</integer>
+                            <key>IOProviderClass</key>
+                            <string>IOUSBDevice</string>
+                            <key>IOMatchStream</key>
+                            <true/>
+                    </dict>
+            </dict>
+    </dict>
+    <key>LaunchOnlyOnce</key>
+    <false/>
+    <key>ProgramArguments</key>
+    <array>
+        <string>/usr/local/bin/dashup</string>
+    </array>
+    <key>StartOnMount</key>
+    <true/>
+    <key>KeepAlive</key><false/>
+</dict>
+</plist>
+

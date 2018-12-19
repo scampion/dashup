@@ -1,0 +1,10 @@
+#!/bin/bash
+osascript -e 'display notification "Crosstour connected" with title "Sync DashCAM"'
+echo $(date) >> /tmp/test
+rsync -avzh /Volumes/NO\ NAME/ /Users/scampion/Movies/crosstour
+osascript -e 'display notification "rsync on crosstour finished" with title "Sync DashCAM - Done"'
+#diskutil umount /dev/$(diskutil list  | grep Windows_FAT_32  | awk '{print $7}')
+sleep 86000
+
+
+
